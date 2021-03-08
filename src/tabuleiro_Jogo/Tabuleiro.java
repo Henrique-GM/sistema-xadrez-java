@@ -38,10 +38,19 @@ public class Tabuleiro {
     }
     
     public Peca peca(Integer linhas, Integer colunas) {
+       
         return pecas[linhas][colunas];
     } 
     
     public Peca peca(Posicao posicao) {
+        
         return pecas[posicao.getFileira()][posicao.getColuna()];
+    }
+    
+    public void colocarPeca(Peca peca, Posicao posicao) {
+        
+        pecas[posicao.getFileira()][posicao.getColuna()] = peca;
+        
+        peca.posicao = posicao;
     }
 }
