@@ -37,5 +37,11 @@ public class Tabuleiro {
         this.colunas = colunas;
     }
     
+    public Peca peca(Integer linhas, Integer colunas) {
+        return pecas[linhas][colunas];
+    } 
     
+    public Peca peca(Posicao posicao) {
+        return pecas[posicao.getFileira()][posicao.getColuna()];
+    }
 }

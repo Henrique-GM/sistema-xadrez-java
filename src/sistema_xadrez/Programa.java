@@ -6,8 +6,7 @@
 package sistema_xadrez;
 
 import tabuleiro_Jogo.Tabuleiro;
-
-
+import xadrez.PartidaDeXadrez;
 
 /**
  *
@@ -19,8 +18,10 @@ public class Programa {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+        PartidaDeXadrez partidaDeXadrez = new PartidaDeXadrez();
         
-       Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+        InterfaceUsuario.printTabuleiro(partidaDeXadrez.getpecas());
     }
-    
+
 }
