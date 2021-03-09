@@ -22,6 +22,7 @@ public class PartidaDeXadrez {
     public PartidaDeXadrez() {
         
         tabuleiro = new Tabuleiro(8, 8);
+        
         setUpInicial();
     }
     
